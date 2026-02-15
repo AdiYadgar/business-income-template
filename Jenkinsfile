@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Test') {
             steps {
-                echo "Repository checked out successfully"
+                echo 'Pipeline is working!'
             }
         }
 
-        stage('Test Pipeline') {
+        stage('Done') {
             steps {
-                echo "Pipeline is working!"
+                echo 'All green 💚'
             }
         }
     }
